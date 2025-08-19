@@ -4,10 +4,11 @@ import { Home } from './component/home/home';
 import { About } from './component/about/about';
 import { Services } from './component/services/services';
 import { Projects } from './component/projects/projects';
+import {Contact} from './component/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Home, About, Services, Projects],
+  imports: [Header, Home, About, Services, Projects, Contact],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
