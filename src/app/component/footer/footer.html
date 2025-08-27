@@ -1,33 +1,31 @@
 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-  <div class="mx-auto grid grid-flow-col max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 content-center">
-    <div class="col-span-2 flex items-center ms-5 my-3">
-      <h2 class="text-[63px] font-medium text-[#dedede]">Let’s Work Together</h2>
+  <div class="flex flex-col md:flex-row justify-center mx-auto p-10">
+    <div class="flex flex-1 items-center justify-center">
+      <h2 class="text-[48px] sm:text-[62px] font-medium text-[#dedede] text-center md:text-start w-full">Let’s Work Together</h2>
     </div>
-    <div class="col-span-1 flex items-center me-5 my-3">
-      <button
-        class="text-[25px] text-[#c9c9c9] font-normal outline-[#4fc3f7] outline-[1px] rounded-[15px] hover:bg-[#48c3f7] hover:text-black px-10 py-2.5 cursor-pointer">
+    <div class="flex flex-none items-center justify-center mt-10 md:mt-0">
+      <a href="mailto:hmzgtl16@;gmail.com"
+        class="rounded-md bg-indigo-500 px-7 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
         <fa-icon [icon]=faEnvelope class="me-1"></fa-icon>
         hmzgtl16&#64;gmail.com
-      </button>
+      </a>
     </div>
   </div>
   <div class="border-t-[1px] border-[#484e53]"></div>
-  <div class="mx-auto grid grid-flow-col max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 content-center">
-    <div class="flex items-center ms-5 my-3">
-      <p class="text-[16px] font-normal text-[#a9a9a9]">© {{ currentYear }} All rights reserved.</p>
+  <div class="flex flex-col sm:flex-row justify-center mx-auto p-8">
+    <div class="flex items-center flex-none">
+      <p class="text-[16px] font-normal text-[#a9a9a9] mx-auto">© {{ currentYear }} All rights reserved.</p>
     </div>
-    <div class="flex flex-row-reverse items-center me-5 my-10">
-      <button (click)="openWhatsapp()" class="mx-1 text-[#a9a9a9] hover:scale-[1.05] cursor-pointer">
-        <fa-icon [icon]=faWhatsapp size=2xl></fa-icon>
-      </button>
-      <button (click)="openLinkedin()" class="mx-1 text-[#a9a9a9] hover:scale-[1.05] cursor-pointer">
-        <fa-icon [icon]=faLinkedin size=2xl></fa-icon>
-      </button>
-      <button (click)="openGithub()" class="mx-1 text-[#a9a9a9] hover:scale-[1.05] cursor-pointer">
-        <fa-icon [icon]=faGithub size=2xl></fa-icon>
-      </button>
+    <div class="flex flex-row flex-1 items-center justify-center sm:justify-end mx-auto mt-5 sm:mx-0 sm:mt-0">
+      <a href="https://github.com/hmzgtl16" target="_blank" class="mx-1 text-[#a9a9a9] hover:scale-[1.25] cursor-pointer">
+        <fa-icon [icon]=faGithub size=xl></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/hmzgtl16/" target="_blank" class="mx-1 text-[#a9a9a9] hover:scale-[1.25] cursor-pointer">
+        <fa-icon [icon]=faLinkedin size=xl></fa-icon>
+      </a>
+      <a href="https://wa.me/213668532680" target="_blank" class="mx-1 text-[#a9a9a9] hover:scale-[1.25] cursor-pointer">
+        <fa-icon [icon]=faWhatsapp size=xl></fa-icon>
+      </a>
     </div>
   </div>
 </div>
-
-

@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 import { faAndroid } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faGear } from '@fortawesome/free-solid-svg-icons';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-services',
   imports: [
-    FaIconComponent
+    FaIconComponent,
+    NgOptimizedImage
   ],
   templateUrl: './services.html',
   styleUrl: './services.css'

@@ -19,20 +19,4 @@ export class Footer {
   protected readonly faWhatsapp = faWhatsapp;
 
   currentYear: number = new Date().getFullYear();
-
-  private githubLink = 'https://github.com/hmzgtl16'
-  private linkedinLink = 'https://www.linkedin.com/in/hmzgtl16/';
-  private whatsapp = ''
-
-  protected openGithub() {
-    window.open(this.githubLink, '_blank');
-  }
-
-  protected openLinkedin() {
-    window.open(this.linkedinLink, '_blank');
-  }
-
-  protected openWhatsapp() {
-    window.open(this.whatsapp, '_blank');
-  }
 }
