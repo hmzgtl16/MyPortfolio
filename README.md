@@ -62,19 +62,32 @@ my-portfolio/
 │  │  ├─ app.html
 │  │  └─ component/
 │  │     ├─ header/
+│  │     │  ├─ header.css
 │  │     │  ├─ header.html
-│  │     │  └─ header.ts
+│  │     │  ├─ header.ts
+│  │     │  └─ ...
 │  │     ├─ home/
-│  │     │  └─ home.html
+│  │     │  ├─ home.css
+│  │     │  ├─ home.html
+│  │     │  │─ home.ts
+│  │     │  └─ ...
 │  │     ├─ projects/
+│  │     │  ├─ projects.css
 │  │     │  ├─ projects.html
-│  │     │  └─ projects.ts
+│  │     │  ├─ projects.ts
+│  │     │  └─ ...
 │  │     ├─ services/
-│  │     │  └─ services.html
+│  │     │  │─ services.css
+│  │     │  │─ services.html
+│  │     │  │─ services.ts
+│  │     │  └─ ...
 │  │     └─ footer/
+│  │        ├─ footer.css
 │  │        ├─ footer.html
-│  │        └─ footer.ts
-│  └─ ... Angular bootstrapping files
+│  │        │─ footer.ts
+│  │        └─ ...
+│  └─ ... 
+├─ ...
 ├─ angular.json
 ├─ package.json
 └─ README.md
@@ -103,4 +116,6 @@ This project uses @fortawesome/angular-fontawesome with brand, regular, and soli
 - If Tailwind styles don’t apply, check your Angular/Tailwind integration and that the dev server restarted after dependency changes.
 
 ## License
-This project is provided as-is for personal portfolio use. Add a LICENSE file if you plan to open-source it.
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Copyright (c) 2025 GATTAL Hamza
