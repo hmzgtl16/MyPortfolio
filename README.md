@@ -1,59 +1,106 @@
-# MyPortfolio
+# My Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+A personal portfolio website built with Angular that showcases projects, services, and contact information. It uses Tailwind CSS for styling and Font Awesome for icons.
 
-## Development server
+> Generated and managed with Angular CLI 20.1.6.
 
-To start a local development server, run:
+## Features
+- Responsive layout with Header, Home, Projects, Services, and Footer sections
+- Font Awesome social icons (GitHub, LinkedIn, WhatsApp)
+- Tailwind CSS v4 utility-first styling
+- Angular 20 application structure and routing
 
-```bash
-ng serve
+## Tech Stack
+- Angular 20
+- Tailwind CSS 4
+- Font Awesome (Angular wrapper)
+- RxJS, Zone.js
+
+## Prerequisites
+- Node.js 18+ and npm
+- Angular CLI (optional for global use):
+  ```bash
+  npm install -g @angular/cli
+  ```
+
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm start
+   ```
+   Then open http://localhost:4200/ in your browser. The app reloads on file changes.
+
+## Available Scripts
+- Start dev server:
+  ```bash
+  npm start
+  ```
+- Build for production:
+  ```bash
+  npm run build
+  ```
+- Watch build (development):
+  ```bash
+  npm run watch
+  ```
+- Run unit tests (Karma):
+  ```bash
+  npm test
+  ```
+
+## Project Structure (high level)
+```
+my-portfolio/
+├─ public/
+│  └─ image/
+├─ src/
+│  ├─ app/
+│  │  ├─ app.html
+│  │  └─ component/
+│  │     ├─ header/
+│  │     │  ├─ header.html
+│  │     │  └─ header.ts
+│  │     ├─ home/
+│  │     │  └─ home.html
+│  │     ├─ projects/
+│  │     │  ├─ projects.html
+│  │     │  └─ projects.ts
+│  │     ├─ services/
+│  │     │  └─ services.html
+│  │     └─ footer/
+│  │        ├─ footer.html
+│  │        └─ footer.ts
+│  └─ ... Angular bootstrapping files
+├─ angular.json
+├─ package.json
+└─ README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Styling
+Tailwind CSS 4 is configured (via @tailwindcss/postcss). Utility classes are used directly in the component templates.
 
-## Code scaffolding
+## Icons
+This project uses @fortawesome/angular-fontawesome with brand, regular, and solid icon packs. See component templates (e.g., footer.html) for usage.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Building and Deployment
+- Production build outputs to dist/:
+  ```bash
+  npm run build
+  ```
+- You can deploy the contents of dist/ to any static hosting provider (e.g., GitHub Pages, Netlify, Vercel, Firebase Hosting, etc.).
 
-```bash
-ng generate component component-name
-```
+## Customization
+- Update contact links and socials in: `src/app/component/footer/footer.html`.
+- Update your sections’ content in the corresponding component templates under `src/app/component/`.
+- Replace images under `public/image/` as needed.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Troubleshooting
+- Ensure Node 18+ is installed.
+- If Tailwind styles don’t apply, check your Angular/Tailwind integration and that the dev server restarted after dependency changes.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+This project is provided as-is for personal portfolio use. Add a LICENSE file if you plan to open-source it.
