@@ -7,8 +7,7 @@ import {NgOptimizedImage} from '@angular/common';
 @Component({
   selector: 'app-services',
   imports: [
-    FaIconComponent,
-    NgOptimizedImage
+    FaIconComponent
   ],
   templateUrl: './services.html',
   styleUrl: './services.css'
